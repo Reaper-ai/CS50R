@@ -1,0 +1,11 @@
+path <- readline("enter file to analyse: ")
+file <- read.csv(path)
+total_pits <- length(file$time)
+min_time <- min(file$time)
+total_time <- sum(file$time)
+max_time <- max(file$time)
+
+print(paste("total pitstops:",total_pits))
+print(paste("shortest pitstops:",min_time))
+print(paste("longest pitstops:",max_time))
+print(paste("total time spent on pitstops:",total_time))
